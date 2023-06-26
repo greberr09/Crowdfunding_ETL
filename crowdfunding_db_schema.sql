@@ -23,17 +23,17 @@ DROP TABLE IF exists category;
 -------------------------------
 
 CREATE TABLE category (
-    category_id varchar(20)  NOT NULL PRIMARY KEY,
+    category_id varchar(30)  NOT NULL PRIMARY KEY,
     category varchar(255)  NOT NULL
 );
 
 CREATE TABLE subcategory (
-    subcategory_id varchar(20)  NOT NULL PRIMARY KEY,
+    subcategory_id varchar(30)  NOT NULL PRIMARY KEY,
     subcategory varchar(255)  NOT NULL  
 );
 
 CREATE TABLE contacts (
-    contact_id varchar(10) NOT NULL PRIMARY KEY,
+    contact_id int NOT NULL PRIMARY KEY,
     first_name varchar(255)  NOT NULL,
     last_name varchar(255)  NOT NULL,
     email varchar (255)  NOT NULL
@@ -41,7 +41,7 @@ CREATE TABLE contacts (
 
 CREATE TABLE campaign (
     cf_id int NOT NULL PRIMARY KEY,
-    contact_id varchar(10) NOT NULL,
+    contact_id int NOT NULL,
     FOREIGN KEY (contact_id) REFERENCES contacts(contact_id),
     company_name varchar(255)  NOT NULL,
     description varchar(400)  NOT NULL,
@@ -49,8 +49,8 @@ CREATE TABLE campaign (
     pledged decimal(12,2)  NOT NULL,
     outcome varchar(20)  NOT NULL,
     backers_count int NOT NULL,
-    country varchar(10) NOT NULL,
-    currency varchar(10) NOT NULL,
+    country varchar(2) NOT NULL,
+    currency varchar(3) NOT NULL,
     launched_date date NOT NULL,
     end_date date NOT NULL,
     category_id varchar(30) NOT NULL,
