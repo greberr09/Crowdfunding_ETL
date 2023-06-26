@@ -7,7 +7,7 @@
 -- The dynamic sql method is a combination of different Stack Overflow
 -- answers and various responses from ChatGpt.  
 
--- empty data if there is any so it can be reloaded.  The order of deleting the data is 
+-- First empty data if there is any so it can be reloaded.  The order of deleting the data is 
 -- critical, becauase of foreign key constraints in the campaigns and contacts tables.
 
 delete from campaign;

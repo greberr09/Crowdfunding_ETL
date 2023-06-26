@@ -1,6 +1,9 @@
 ------------------------------------------------------------------------------------------------
 -- Querying the crowdfunding_db, per requirements of challenge, to see that all loaded correctlt.
 -- An additional query was added after querying each table individually, to join all four tables
+-- If the file is run in its entirety, the only output displayed in the output data will be the 
+-- last query run. To see the output from any one individual query, it can be highlighted and
+-- run individually in pgAdmin4.
 ------------------------------------------------------------------------------------------------
 
 -- First get the counts for each table

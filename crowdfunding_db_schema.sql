@@ -2,9 +2,11 @@
 -- Database: crowdfunding_db 
 
 -- This is a database for crowdfunding campaigns
--- This sql will drop the tables if they exist,
--- create the tables, and query each empty table to 
--- verify that they were created with the proper fields
+-- This sql will drop the tables if they exist, create the tables, and query each empty table to 
+-- verify that they were created with the proper fields.   if the file is executed in its
+-- entirety, the only output displayed in the output data will be the last query run.  To
+-- see the output for the individual queries, the sql for that query can be highlighted and
+-- run individually in pgAdmin4.
 ---------------------------------------------------------
 
 --  The table drops must be done in this order because of the foreign key constraints
