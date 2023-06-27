@@ -10,7 +10,7 @@ The input .xlsx files, and the .csv files saved from the Pandas dataframes, are 
 
 While they are not explicitly imported in the notebook, to read the Excel files, either "xlrd" or "openpyxl" must be installed.   The "xlrd" package is an older package that works with Python 2 and Python 3 and with both .xls and .xlsx files.  The newer "openpyxl" works with Python 3 and handles newer forms of .xlsx files.   The jupyter notebook uses list comprehensions and regular expressions, among other things, to transform the data.
 
-The two input Excel files are "oontacts.xlsx" and "crowdfunding.xlsx".
+The two input Excel files are "contacts.xlsx" and "crowdfunding.xlsx".
 
 The four .csv files created are category.csv", "subcategory.csv", "contacts.csv",  and "campaign.csv".
 
